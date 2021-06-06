@@ -1,0 +1,139 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('assets/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url('assets/Roboto-Thin.ttf');
+}
+
+body {
+  background-color: rgb(61 , 33 , 104);
+}
+
+#title {
+  color: black;
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 32px;
+  user-select: none;
+}
+
+p {
+  color: rgb(32 , 32 , 32);
+  font-family: Roboto-Thin, sans-serif;
+  font-size: 20px;
+  font-style: oblique;
+  user-select: none;
+}
+
+li {
+  color: rgb(73 , 81 , 111);
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 18px;
+  margin: 17px 12px;
+}
+
+.selected {
+  color: rgb(32 , 32 , 32);
+  background-color: gray;
+}
+
+.selected::marker {
+  color: rgb(73 , 81 , 111);
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+#lista-container {
+  width: 445px;
+  background-color: rgba(176 , 196 , 222 , 0.705);
+  margin: 32px 0;
+  padding: 12px;
+}
+
+#center {
+  width: 850px;
+  background-color: rgb(254 , 255 , 254);
+  margin: 70px 210px 70px 160px;
+  padding: 40px 20px 60px 85px;
+  border: transparent;
+  border-radius: 33px;
+  box-shadow: 14px 14px rgb(125 , 111 , 212), 28px 28px rgb(93 , 79 , 180);
+}
+
+input {
+  font-family: Roboto-Regular, sans-serif;
+  background-color: rgb(254 , 255 , 254);
+  height: 3px;
+  width: 181px;
+  padding: 14px;
+  border: 1px solid rgb(54 , 65 , 62);
+  border-radius: 13px;
+  text-align: center;
+}
+
+input::placeholder {
+  font-family: Roboto-Thin, sans-serif;
+  font-size: 17px;
+}
+
+input:focus {
+  background-color: aliceblue;
+  outline: none;
+}
+
+button {
+  background-color: rgb(32 , 176 , 102);
+  color: rgb(254 , 255 , 254);
+  font-size: 14px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+ol + button {
+  margin-left: 0;
+}
+
+button:hover {
+  filter: brightness(93%);
+}
+
+.move {
+  background-color: rgb(131 , 145 , 157);
+}
+
+#remover-selecionado {
+  background-color: rgb(57 , 160 , 237);
+}
+
+#remover-finalizados {
+  background-color: rgb(11 , 79 , 108);
+}
+
+#apaga-tudo {
+  background-color: rgb(206 , 45 , 79);
+}
+
+#salvar-tarefas {
+  background-color: rgb(89 , 60 , 113);
+}
+
+img {
+  height: 89px;
+  width: 89px;
+  position: fixed;
+  top: 25px;
+  right: 20px;
+  opacity: 60%;
+  transition: 0.4s;
+}
+
+img:hover {
+  opacity: 93%;
+}
